@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <button>Login</button>
+    <button>Sign Up</button>
+    <div>TotalView: </div>
+    <div>
+        <span id="totalViewsCounter"></span>
+    </div>
+    <a class="btn btn-danger" asp-controller="Order" asp-action="Index" >Buy Food</a>
+    <a class="btn btn-danger" asp-controller="Order" asp-action="RiderOrder">Become a Rider</a>
+</div>
+
+<script src="~/js/signalr.js"></script>
+<script src="~/js/Order.js"></script>
